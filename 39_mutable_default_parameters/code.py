@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 class Student:
-    def __init__(self, name: str, grades: Optional[List[int]] = None): # this is bad!
+    def __init__(self, name: str, grades: Optional[List[int]] = None): # using mutable default parameters is bad!
         self.name = name
         self.grades = grades or []
     
